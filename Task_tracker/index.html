@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Tracker</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+input, select, button{
+    padding: 8px;
+    margin: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+
+<h2>Task Tracker</h2>
+
+<form id="taskForm">
+    <input
+        type="text"
+        id="taskName"
+        placeholder="Task Name"
+        required>
+
+    <input
+        type="date"
+        id="taskDate"
+        required>
+
+    <select id="taskStatus">
+        <option value="Pending">Pending</option>
+        <option value="Completed">Completed</option>
+    </select>
+
+    <button type="submit">Add Task</button>
+</form>
+
+<br>
+
+<label>Filter:</label>
+
+<select id="filter">
+    <option value="all">All</option>
+    <option value="upcoming">Upcoming</option>
+    <option value="past">Past</option>
+</select>
+
+<table>
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Due Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody id="taskList"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

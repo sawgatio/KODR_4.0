@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+input, select, button{
+    padding: 8px;
+    margin: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 1px solid #ccc;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+h3{
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Expense Tracker</h2>
+
+<form id="expenseForm">
+    <input type="text" id="name" placeholder="Expense Name" required>
+
+    <input type="number" id="amount" placeholder="Amount" required>
+
+    <input type="date" id="date" required>
+
+    <button type="submit">Add Expense</button>
+</form>
+
+<br>
+
+<label>Select Month:</label>
+
+<select id="monthFilter">
+    <option value="">All Months</option>
+    <option value="0">January</option>
+    <option value="1">February</option>
+    <option value="2">March</option>
+    <option value="3">April</option>
+    <option value="4">May</option>
+    <option value="5">June</option>
+    <option value="6">July</option>
+    <option value="7">August</option>
+    <option value="8">September</option>
+    <option value="9">October</option>
+    <option value="10">November</option>
+    <option value="11">December</option>
+</select>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody id="expenseList"></tbody>
+</table>
+
+<h3 id="total">Total: ₹0</h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>

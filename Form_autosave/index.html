@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form AutoSave</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+input, textarea{
+    width: 300px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+button{
+    padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Profile Form</h2>
+
+<form id="profileForm">
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter your name">
+
+    <br>
+
+    <textarea
+        id="bio"
+        placeholder="Write your bio..."></textarea>
+
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

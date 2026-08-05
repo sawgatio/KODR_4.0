@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #search {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 180px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Product Search</h2>
+
+  <!-- Search Input -->
+  <input type="text" id="search" placeholder="Search by name or category">
+
+  <!-- Product Cards -->
+  <div class="products" id="productList"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

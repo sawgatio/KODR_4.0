@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Sorting</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+button{
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 1px solid #ccc;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Student Sorting UI</h2>
+
+<button id="sortName">Sort by Name</button>
+<button id="sortAge">Sort by Age</button>
+<button id="sortMarks">Sort by Marks</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody id="studentList"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

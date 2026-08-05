@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment System</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:30px;
+}
+
+input{
+    padding:8px;
+    width:300px;
+}
+
+button{
+    padding:8px 12px;
+    margin-left:5px;
+    cursor:pointer;
+}
+
+.comment{
+    border:1px solid #ccc;
+    padding:10px;
+    margin-top:15px;
+    border-radius:5px;
+}
+
+.reply{
+    margin-left:30px;
+    margin-top:10px;
+    border-left:3px solid #ddd;
+    padding-left:10px;
+}
+
+.replyBox{
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Comment System</h2>
+
+<input type="text" id="commentInput" placeholder="Write a comment">
+<button onclick="addComment()">Post</button>
+
+<div id="comments"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

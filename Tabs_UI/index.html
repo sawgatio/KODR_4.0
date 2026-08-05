@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabs UI</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.tabs{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+button.active{
+    background: #007bff;
+    color: white;
+}
+
+#content{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 100px;
+}
+</style>
+</head>
+<body>
+
+<h2>Tabs UI</h2>
+
+<div class="tabs">
+    <button class="tab active" data-tab="about">About</button>
+    <button class="tab" data-tab="projects">Projects</button>
+    <button class="tab" data-tab="contact">Contact</button>
+</div>
+
+<div id="content"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

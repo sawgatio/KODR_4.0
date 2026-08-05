@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Previewer</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+#preview{
+    margin-top:20px;
+}
+
+#preview img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border:2px solid #ccc;
+    border-radius:8px;
+}
+
+.error{
+    color:red;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Upload Image Preview</h2>
+
+<input type="file" id="imageInput" accept="image/jpeg,image/png">
+
+<p id="message"></p>
+
+<div id="preview"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
